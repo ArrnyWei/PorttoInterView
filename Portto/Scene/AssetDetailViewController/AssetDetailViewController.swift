@@ -23,6 +23,7 @@ class AssetDetailViewController: UIFlowViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        bindUI()
     }
 
     override func viewWillAppear(_ animated: Bool) {

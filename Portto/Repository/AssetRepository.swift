@@ -21,6 +21,13 @@ class AssetRepository {
         if let next = next {
             path += "&cursor=\(next)"
         }
-        return APIService.shared.request(path: path, dataModel: AssetDecoder.self)
+        return APIService.shared.request(service: .assetList, path: path, dataModel: AssetDecoder.self)
+    }
+
+    func getBalance(owner: String = "0x19818f44faf5a217f619aff0fd487cb2a55cca65") -> Observable<Result<BalanceDecoder, Error>> {
+        let path = "https://mainnet.infura.io/v3/755b3352f9a347eb8c25113eb5cd3908"
+
+        return APIService.shared.request(service: .balance, path: path, body: ["jsonrpc": "2.0", "method": "eth_getBalance", "params": [owner, "latest"], "id": 1], dataModel: BalanceDecoder.self)
+        
     }
 }

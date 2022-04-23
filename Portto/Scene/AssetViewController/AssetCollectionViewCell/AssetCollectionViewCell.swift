@@ -21,6 +21,8 @@ class AssetCollectionViewCell: UICollectionViewCell {
         nameLabel.text = asset.name
         if let url = asset.image_url {
             assetImageView.loadImageUsingCache(withUrl: url)
+        } else {
+            assetImageView.image = nil
         }
     }
 }

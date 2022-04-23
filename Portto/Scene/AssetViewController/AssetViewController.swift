@@ -47,6 +47,15 @@ class AssetViewController: UIFlowViewController {
             }
         }).disposed(by: disposeBag)
 
+        viewModel.balanceRelay
+            .subscribe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] balance in
+                guard let self = self else { return }
+                if let balance = balance {
+                    self.title = "\(balance)"
+                }
+            }).disposed(by: disposeBag)
+
         viewModel.errorRelay
             .subscribe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] error in

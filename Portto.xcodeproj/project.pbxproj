@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C873ED8A2814850D00D015CF /* BalanceDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873ED892814850D00D015CF /* BalanceDecoder.swift */; };
 		C8BFC6052813ED2D003C1B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFC6042813ED2D003C1B58 /* AppDelegate.swift */; };
 		C8BFC6072813ED2D003C1B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFC6062813ED2D003C1B58 /* SceneDelegate.swift */; };
 		C8BFC6092813ED2D003C1B58 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFC6082813ED2D003C1B58 /* AssetViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C873ED892814850D00D015CF /* BalanceDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDecoder.swift; sourceTree = "<group>"; };
 		C8BFC6012813ED2D003C1B58 /* Portto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BFC6042813ED2D003C1B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8BFC6062813ED2D003C1B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				C8BFC63A28140C88003C1B58 /* AssetDecoder.swift */,
+				C873ED892814850D00D015CF /* BalanceDecoder.swift */,
 			);
 			path = Decoder;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				C8BFC6072813ED2D003C1B58 /* SceneDelegate.swift in Sources */,
 				C8BFC65328143BD4003C1B58 /* AssetFlowCoordinator.swift in Sources */,
 				C8BFC64A2814397D003C1B58 /* AssetDetailViewController.swift in Sources */,
+				C873ED8A2814850D00D015CF /* BalanceDecoder.swift in Sources */,
 				C8BFC64F28143A0B003C1B58 /* FlowCoordinator.swift in Sources */,
 				C8BFC6322814043B003C1B58 /* UICollectionView+Utils.swift in Sources */,
 				C8BFC6242813F1A1003C1B58 /* AssetViewModel.swift in Sources */,

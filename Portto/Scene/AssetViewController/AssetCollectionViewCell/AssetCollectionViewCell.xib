@@ -30,8 +30,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qW-YV-vsA">
                                 <rect key="frame" x="0.0" y="180" width="180" height="57"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQk-OW-r8p">
-                                        <rect key="frame" x="90" y="28.5" width="0.0" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQk-OW-r8p">
+                                        <rect key="frame" x="0.0" y="28.5" width="180" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -40,7 +40,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="FQk-OW-r8p" firstAttribute="centerY" secondItem="5qW-YV-vsA" secondAttribute="centerY" id="aSG-dq-yrr"/>
-                                    <constraint firstItem="FQk-OW-r8p" firstAttribute="centerX" secondItem="5qW-YV-vsA" secondAttribute="centerX" id="mQL-gT-lM0"/>
+                                    <constraint firstItem="FQk-OW-r8p" firstAttribute="leading" secondItem="5qW-YV-vsA" secondAttribute="leading" id="pAS-we-r6b"/>
+                                    <constraint firstAttribute="trailing" secondItem="FQk-OW-r8p" secondAttribute="trailing" id="xuR-Vs-UP7"/>
                                 </constraints>
                             </view>
                         </subviews>
